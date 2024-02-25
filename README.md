@@ -15,7 +15,7 @@ Character animation is a challenging task that requires a high degree of skill a
 
 ## Architecture
 
-![Architecture](https://cci-git.charlotte.edu/itcs-4152-5152-spring-2023/itcs-4152-5152-creating-stunning-animations-from-still-images-with-deep-learning/group-6-stunning-animations-from-still-images/-/blob/b377375803db4c45ebd5ced37dbc819d1b350cd7/Architecture.png)
+![Architecture](https://github.com/swapnil-hoskatti/stunning-animations-from-still-images/blob/16c4d84ad5eaf1665e71db241d2b1252df8b30d9/Architecture.png?raw=true)
 
 (Top) Training: Our model uses a pose detector P to create pose stick figures from video frames of the target subject.
 We learn the mapping G alongside an adversarial discriminator D which attempts to distinguish between the “real” correspondences
@@ -25,7 +25,7 @@ stick figures are created. Then we apply the trained mapping G
 
 ## Demo
 Here, you can clearly see that the Rahul able to perform the same dance moves as Bruno Mars is doing in the Music Video " That's What I Like "
-![demo](https://cci-git.charlotte.edu/itcs-4152-5152-spring-2023/itcs-4152-5152-creating-stunning-animations-from-still-images-with-deep-learning/group-6-stunning-animations-from-still-images/-/blob/b377375803db4c45ebd5ced37dbc819d1b350cd7/Export.gif)
+![demo](https://github.com/swapnil-hoskatti/stunning-animations-from-still-images/blob/16c4d84ad5eaf1665e71db241d2b1252df8b30d9/Export.gif?raw=true)
 
 ## Installation
 Create a virtual environment using Anaconda or virtual env.
@@ -38,6 +38,10 @@ For pip:
 pip install -r requirements.txt
 ```
 Note: CUDA 11.7 along with supported toolkit is required to run with GPU.
+
+Download PoseEstimation model weights using the following link: 
+[pose_model.pth](https://drive.google.com/file/d/1eXVSKMcbxJER57jNXKwfm-JcBbhEINmI/view?usp=sharing)
+Move the model to folder "src/PoseEstimation/network/weight/"
 
 ## Usage
 
